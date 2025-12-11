@@ -1,6 +1,6 @@
 package lab4OOP;
 
-public class Student {
+public class Student implements Comparable {
 
 	public Student() {
 		// default constructor
@@ -24,5 +24,11 @@ public class Student {
 
 	int getAge() {
 		return age;
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }
