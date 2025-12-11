@@ -1,22 +1,25 @@
 package hope;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
 
 public class HelloWorld {
 	public static void main(String[] args) {
-		int[] clubs = { 15, 5, 54, 45, 4, 11 }; // so luong phan tu co dinh
+		int mang[] = new int[5];
 
-		for (int i = 0; i < clubs.length; i++) {
-			for (int j = i + 1; j < clubs.length; j++) {
-				if (clubs[i] > clubs[j]) {
-					int temp = clubs[i];
-					clubs[i] = clubs[j];
-					clubs[j] = temp;
-				}
-			}
+		int[] mang2 = new int[] { 1, 2, 3 };
+
+		List<String> a = new ArrayList<String>();
+
+		Scanner sc = new Scanner(System.in);
+		for (int i = 0; i < mang.length; i++) {
+			System.out.println("nhap phan tu thu: " + (i + 1));
+			int input = sc.nextInt();
+			mang[i] = input;
 		}
 
-		System.out.println("run here " + Arrays.toString(clubs));
-
+		System.out.println(Arrays.toString(mang));
 	}
 }
