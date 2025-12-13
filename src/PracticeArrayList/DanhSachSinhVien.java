@@ -80,5 +80,10 @@ public class DanhSachSinhVien {
 			}
 
 		});
+
+//		this.danhSachSinhVien.sort(
+//			    (o1, o2) -> Double.compare(o2.getDiemTrungBinh(), o1.getDiemTrungBinh())
+//			);
+
 	}
 }
