@@ -21,5 +21,6 @@ public class HelloWorld {
 		}
 
 		System.out.println(Arrays.toString(mang));
+
 	}
 }
